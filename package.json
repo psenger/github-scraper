@@ -1,0 +1,20 @@
+{
+  "name": "github-scraper",
+  "version": "1.0.0",
+  "description": "github-scraper used to scan repos owned by an org, clone them locally, look for a Dockerfile, and extract the FROM into a nice CSV for management",
+  "main": "scraper.js",
+  "scripts": {
+    "scraper": "node -r dotenv/config scraper.js",
+    "build-masterlist": "node -r dotenv/config build-masterlist.js",
+    "build-inventory": "node -r dotenv/config build-inventory.js"
+  },
+  "keywords": [],
+  "author": "Philip A Senger <philip.a.senger@cngrgroup.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^18.3.2",
+    "dotenv": "^8.2.0",
+    "json2csv": "^5.0.6",
+    "lodash": "^4.17.21"
+  }
+}
