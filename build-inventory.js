@@ -7,7 +7,6 @@ const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 
 const outFile = process.env['GITHUB-OUTFILE'] || 'data.json';
-const csvFile = process.env['GITHUB-CSVFILE'] || 'data.csv';
 const inventoryFile = process.env['GITHUB-INVENTORY'] || '';
 const skipNames = Array.from(new Set((process.env['GITHUB-SKIP-NAMES'] || '').split(','))).map(v => v.trim()).filter(v => v.length !== 0);
 
