@@ -14,6 +14,8 @@ Must refer to [OctoKit](https://octokit.github.io/rest.js/v18)
 
 ## Variables
 
+This project uses `.env`
+
 | Variable          	| Required 	| Default             	| Purpose                                                                                                                                                                                                                                                                                              	|
 |-------------------	|----------	|---------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | GITHUB-PAL-TOKEN  	| true     	|                     	| Personal access token ([create](https://github.com/settings/tokens/new))                                                                                                                                                                                                                             	|
